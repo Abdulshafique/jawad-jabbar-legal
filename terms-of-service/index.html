@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Use (Terms of Service) | Jawad Jabbar</title>
+  <meta name="description" content="Official Terms of Use (Terms of Service) for Jawad Jabbar websites, applications, software, products, and services." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --surface-muted: #f1f5f9;
+      --border: #e2e8f0;
+      --text-primary: #0f172a;
+      --text-secondary: #334155;
+      --text-muted: #64748b;
+      --accent: #2563eb;
+      --accent-soft: #eff6ff;
+      --accent-border: #bfdbfe;
+      --shadow-sm: 0 1px 2px 0 rgba(15, 23, 42, 0.05);
+      --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.07), 0 2px 4px -2px rgba(15, 23, 42, 0.05);
+      --radius: 14px;
+    }
+
+    [data-theme="dark"] {
+      --bg: #0b0f19;
+      --surface: #111827;
+      --surface-muted: #1e293b;
+      --border: #1f2937;
+      --text-primary: #f8fafc;
+      --text-secondary: #cbd5e1;
+      --text-muted: #94a3b8;
+      --accent: #60a5fa;
+      --accent-soft: rgba(59, 130, 246, 0.12);
+      --accent-border: rgba(96, 165, 250, 0.3);
+      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+      --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 96px;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text-secondary);
+      line-height: 1.7;
+      font-size: 16px;
+      transition: background-color 0.2s ease, color 0.2s ease;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+      color: var(--text-primary);
+      line-height: 1.3;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      transition: opacity 0.15s ease;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    [data-theme="dark"] .navbar {
+      background: rgba(17, 24, 39, 0.88);
+    }
+
+    .navbar-inner {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0.85rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 800;
+      font-size: 1.15rem;
+      color: var(--text-primary);
+      text-decoration: none !important;
+    }
+
+    .brand-badge {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+      color: #ffffff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 0.95rem;
+      letter-spacing: -0.5px;
+      box-shadow: 0 2px 8px rgba(37, 99, 235, 0.35);
+    }
+
+    .nav-controls {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+    }
+
+    .doc-switcher {
+      display: inline-flex;
+      background: var(--surface-muted);
+      padding: 0.25rem;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+    }
+
+    .doc-switcher a {
+      padding: 0.4rem 0.9rem;
+      border-radius: 7px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: all 0.15s ease;
+    }
+
+    .doc-switcher a.active,
+    .doc-switcher a:hover {
+      background: var(--surface);
+      color: var(--text-primary);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .btn-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      padding: 0.48rem 0.8rem;
+      border-radius: 9px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .btn-icon:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .hero {
+      background: linear-gradient(180deg, var(--accent-soft) 0%, transparent 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 3.5rem 1.5rem 2.75rem;
+    }
+
+    .hero-inner {
+      max-width: 1240px;
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.3rem 0.8rem;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      border: 1px solid var(--accent-border);
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 1rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(1.85rem, 3.5vw, 2.75rem);
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      margin-bottom: 0.75rem;
+    }
+
+    .hero p {
+      max-width: 720px;
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .meta-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+
+    .meta-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+    }
+
+    .meta-item strong {
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+
+    .layout {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 5rem;
+      display: grid;
+      grid-template-columns: 290px minmax(0, 1fr);
+      gap: 2.5rem;
+      align-items: start;
+    }
+
+    .sidebar {
+      position: sticky;
+      top: 88px;
+      max-height: calc(100vh - 110px);
+      overflow-y: auto;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .sidebar::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    .sidebar::-webkit-scrollbar-thumb {
+      background: var(--border);
+      border-radius: 999px;
+    }
+
+    .search-box {
+      position: relative;
+      margin-bottom: 1.1rem;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 0.55rem 0.8rem;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: var(--surface-muted);
+      color: var(--text-primary);
+      font-size: 0.85rem;
+      outline: none;
+      transition: border-color 0.15s ease;
+    }
+
+    .search-box input:focus {
+      border-color: var(--accent);
+      background: var(--surface);
+    }
+
+    .toc-group-title {
+      font-size: 0.76rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: var(--accent);
+      margin-bottom: 0.55rem;
+      padding: 0 0.4rem;
+    }
+
+    .toc-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
+    }
+
+    .toc-list a {
+      display: block;
+      padding: 0.35rem 0.6rem;
+      border-radius: 6px;
+      font-size: 0.83rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: all 0.15s ease;
+      line-height: 1.35;
+    }
+
+    .toc-list a:hover {
+      color: var(--text-primary);
+      background: var(--surface-muted);
+    }
+
+    .toc-list a.active {
+      color: var(--accent);
+      background: var(--accent-soft);
+      font-weight: 600;
+    }
+
+    .doc-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2.5rem;
+      box-shadow: var(--shadow-md);
+    }
+
+    .doc-header {
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 1.5rem;
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .doc-header-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--accent);
+      background: var(--accent-soft);
+      border: 1px solid var(--accent-border);
+      padding: 0.28rem 0.75rem;
+      border-radius: 999px;
+    }
+
+    .doc-header h2 {
+      font-size: clamp(1.5rem, 2.5vw, 2rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+
+    .legal-section {
+      padding-bottom: 1.75rem;
+      margin-bottom: 1.75rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .legal-section:last-child {
+      padding-bottom: 0;
+      margin-bottom: 0;
+      border-bottom: none;
+    }
+
+    .legal-section h3 {
+      font-size: 1.18rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: baseline;
+      gap: 0.5rem;
+    }
+
+    .section-num {
+      color: var(--accent);
+      font-weight: 800;
+      font-size: 0.95rem;
+      min-width: 1.6rem;
+    }
+
+    .legal-section p {
+      margin-bottom: 0.85rem;
+      color: var(--text-secondary);
+    }
+
+    .legal-section p:last-child {
+      margin-bottom: 0;
+    }
+
+    .legal-section ul {
+      margin: 0.6rem 0 1rem 1.35rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
+    .legal-section li {
+      color: var(--text-secondary);
+      padding-left: 0.25rem;
+    }
+
+    .contact-box {
+      margin-top: 0.85rem;
+      background: var(--surface-muted);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.15rem 1.35rem;
+    }
+
+    .contact-box ul {
+      list-style: none;
+      margin: 0;
+      gap: 0.5rem;
+    }
+
+    .contact-box li {
+      padding-left: 0;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      background: var(--surface);
+      padding: 2.25rem 1.5rem;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    .footer-inner {
+      max-width: 1240px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.65rem;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 1.5rem;
+      right: 1.5rem;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: #ffffff;
+      border: none;
+      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.35);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(10px);
+      transition: all 0.2s ease;
+      z-index: 40;
+    }
+
+    .back-to-top.visible {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 960px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        position: static;
+        max-height: none;
+      }
+
+      .doc-card {
+        padding: 1.65rem;
+      }
+    }
+
+    @media print {
+      .navbar, .sidebar, .back-to-top {
+        display: none !important;
+      }
+
+      .layout {
+        display: block;
+        padding: 0;
+      }
+
+      .doc-card {
+        box-shadow: none;
+        border: none;
+        padding: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sticky Top Navigation -->
+  <header class="navbar">
+    <div class="navbar-inner">
+      <a href="https://abdulshafique.github.io/jawad-jabbar-legal/" class="brand">
+        <span class="brand-badge">JJ</span>
+        <span>Jawad Jabbar</span>
+      </a>
+
+      <div class="nav-controls">
+        <nav class="doc-switcher" aria-label="Document Pages">
+          <a href="https://abdulshafique.github.io/jawad-jabbar-legal/terms-of-service/" class="active">Terms of Use</a>
+          <a href="https://abdulshafique.github.io/jawad-jabbar-legal/privacy-policy/">Privacy Policy</a>
+        </nav>
+
+        <button class="btn-icon" id="theme-toggle" type="button" title="Toggle Dark/Light Mode" aria-label="Toggle Dark/Light Mode">
+          <span id="theme-icon">🌙</span>
+          <span id="theme-label">Dark</span>
+        </button>
+
+        <button class="btn-icon" type="button" onclick="window.print()" title="Print or Save as PDF">
+          🖨️ <span>Print</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">Legal Agreement</div>
+      <h1>Terms of Use</h1>
+      <p>
+        These Terms of Use govern your access to and use of our website, applications, software, products, and services provided by Jawad Jabbar.
+      </p>
+      <div class="meta-bar">
+        <span class="meta-item">🏢 <strong>Company:</strong> Jawad Jabbar</span>
+        <span class="meta-item">📍 <strong>Country of Operation:</strong> Pakistan</span>
+        <span class="meta-item">✉️ <strong>Contact:</strong> <a href="mailto:jawadjabbar8261@gmail.com">jawadjabbar8261@gmail.com</a></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content Layout -->
+  <div class="layout">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar" aria-label="Table of Contents">
+      <div class="search-box">
+        <input type="search" id="section-filter" placeholder="Filter sections..." aria-label="Filter sections" />
+      </div>
+
+      <div class="toc-group">
+        <div class="toc-group-title">Terms of Use Sections</div>
+        <ul class="toc-list" id="toc-terms">
+          <li><a href="#tou-1">1. Introduction</a></li>
+          <li><a href="#tou-2">2. Eligibility</a></li>
+          <li><a href="#tou-3">3. Our Services</a></li>
+          <li><a href="#tou-4">4. User Accounts</a></li>
+          <li><a href="#tou-5">5. Acceptable Use</a></li>
+          <li><a href="#tou-6">6. Intellectual Property Rights</a></li>
+          <li><a href="#tou-7">7. User Content</a></li>
+          <li><a href="#tou-8">8. Payments, Subscriptions &amp; Refunds</a></li>
+          <li><a href="#tou-9">9. Third-Party Services and Links</a></li>
+          <li><a href="#tou-10">10. Privacy</a></li>
+          <li><a href="#tou-11">11. Service Availability and Changes</a></li>
+          <li><a href="#tou-12">12. Disclaimer of Warranties</a></li>
+          <li><a href="#tou-13">13. Limitation of Liability</a></li>
+          <li><a href="#tou-14">14. Indemnification</a></li>
+          <li><a href="#tou-15">15. Suspension and Termination</a></li>
+          <li><a href="#tou-16">16. Governing Law and Disputes</a></li>
+          <li><a href="#tou-17">17. Changes to These Terms</a></li>
+          <li><a href="#tou-18">18. Contact Us</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Legal Article -->
+    <main class="content">
+      <article class="doc-card" id="terms-of-use">
+        <div class="doc-header">
+          <h2>Terms of Use</h2>
+          <span class="doc-header-badge">Terms of Service</span>
+        </div>
+
+        <section class="legal-section" id="tou-1">
+          <h3><span class="section-num">1.</span> Introduction</h3>
+          <p>These Terms of Use govern your access to and use of our website, applications, software, products, and services (collectively, the “Services”).</p>
+          <p>By accessing or using our Services, you agree to these Terms of Use. If you do not agree, please discontinue using our Services.</p>
+        </section>
+
+        <section class="legal-section" id="tou-2">
+          <h3><span class="section-num">2.</span> Eligibility</h3>
+          <p>You must have the legal capacity to enter into a binding agreement to use our Services. If you are using our Services on behalf of a company or organization, you confirm that you have the authority to bind that organization to these Terms.</p>
+          <p>Our Services are not intended for children who are prohibited from using them under applicable law.</p>
+        </section>
+
+        <section class="legal-section" id="tou-3">
+          <h3><span class="section-num">3.</span> Our Services</h3>
+          <p>We provide digital products, tools, resources, and other online services as described on our Website. Features may be added, modified, suspended, or discontinued from time to time.</p>
+          <p>We reserve the right to improve our Services, introduce new features, and impose reasonable usage restrictions when necessary for security, technical, or business reasons.</p>
+        </section>
+
+        <section class="legal-section" id="tou-4">
+          <h3><span class="section-num">4.</span> User Accounts</h3>
+          <p>Certain features may require you to create an account.</p>
+          <p>You agree to:</p>
+          <ul>
+            <li>Provide accurate, current, and complete registration information.</li>
+            <li>Keep your login credentials confidential.</li>
+            <li>Maintain the security of your account.</li>
+            <li>Notify us promptly if you suspect unauthorized access to your account.</li>
+            <li>Accept responsibility for activities conducted through your account, to the extent permitted by applicable law.</li>
+          </ul>
+          <p>We may suspend or terminate accounts that violate these Terms or pose a security risk.</p>
+        </section>
+
+        <section class="legal-section" id="tou-5">
+          <h3><span class="section-num">5.</span> Acceptable Use</h3>
+          <p>You agree not to:</p>
+          <ul>
+            <li>Use our Services for unlawful, fraudulent, deceptive, or harmful purposes.</li>
+            <li>Violate the intellectual property, privacy, or other legal rights of another person.</li>
+            <li>Upload or distribute malware, malicious code, or harmful content.</li>
+            <li>Attempt to gain unauthorized access to our systems, accounts, servers, or databases.</li>
+            <li>Interfere with the operation, security, or availability of our Services.</li>
+            <li>Scrape, copy, reverse engineer, or commercially exploit our Services except where permitted by law or expressly authorized by us.</li>
+            <li>Circumvent usage limits, access controls, or security mechanisms.</li>
+            <li>Use automated methods to abuse our Services or place unreasonable demands on our infrastructure.</li>
+          </ul>
+          <p>We may investigate suspected violations and take appropriate action.</p>
+        </section>
+
+        <section class="legal-section" id="tou-6">
+          <h3><span class="section-num">6.</span> Intellectual Property Rights</h3>
+          <p>Unless otherwise stated, our Website and Services, including their design, branding, logos, software, text, graphics, and original materials, are owned by or licensed to Jawad Jabbar and are protected by applicable intellectual property laws.</p>
+          <p>We grant you a limited, non-exclusive, non-transferable, revocable license to access and use our Services for their intended purposes.</p>
+          <p>You may not reproduce, distribute, modify, sell, or create derivative works from our intellectual property without prior written permission, except as allowed by applicable law.</p>
+        </section>
+
+        <section class="legal-section" id="tou-7">
+          <h3><span class="section-num">7.</span> User Content</h3>
+          <p>“User Content” means text, files, images, documents, prompts, feedback, or other materials that you submit to our Services.</p>
+          <p>You retain ownership of your User Content to the extent that you own the applicable rights.</p>
+          <p>By submitting User Content, you grant us a limited license to host, process, reproduce, and use that content only as reasonably necessary to provide, maintain, secure, and improve the Services, in accordance with our <a href="https://abdulshafique.github.io/jawad-jabbar-legal/privacy-policy/">Privacy Policy</a> and any additional terms that apply.</p>
+          <p>You represent that you have the necessary rights and permissions to submit your User Content.</p>
+          <p>You must not submit content that is unlawful, infringes another person's rights, or violates these Terms.</p>
+        </section>
+
+        <section class="legal-section" id="tou-8">
+          <h3><span class="section-num">8.</span> Payments, Subscriptions, and Refunds</h3>
+          <p>If we offer paid products or subscriptions:</p>
+          <ul>
+            <li>Prices, billing frequency, and applicable charges will be disclosed before purchase.</li>
+            <li>You authorize the applicable payment provider to process authorized charges.</li>
+            <li>Subscription renewals and cancellations will be governed by the terms disclosed during checkout.</li>
+            <li>Refund eligibility will be determined by our published refund policy and applicable law.</li>
+            <li>You are responsible for applicable taxes unless otherwise stated.</li>
+          </ul>
+          <p>Any additional product-specific payment or refund terms will form part of your agreement with us.</p>
+        </section>
+
+        <section class="legal-section" id="tou-9">
+          <h3><span class="section-num">9.</span> Third-Party Services and Links</h3>
+          <p>Our Website may contain links to third-party websites, integrations, tools, or services.</p>
+          <p>We do not control third-party services and are not responsible for their content, availability, security, or privacy practices. Your use of those services may be subject to separate terms and privacy policies.</p>
+        </section>
+
+        <section class="legal-section" id="tou-10">
+          <h3><span class="section-num">10.</span> Privacy</h3>
+          <p>Your use of our Services is also subject to our <a href="https://abdulshafique.github.io/jawad-jabbar-legal/privacy-policy/">Privacy Policy</a>, which explains how we collect, use, disclose, and protect personal information.</p>
+          <p>Please review the <a href="https://abdulshafique.github.io/jawad-jabbar-legal/privacy-policy/">Privacy Policy</a> before using our Services.</p>
+        </section>
+
+        <section class="legal-section" id="tou-11">
+          <h3><span class="section-num">11.</span> Service Availability and Changes</h3>
+          <p>We strive to keep our Services available and functioning properly, but we do not guarantee uninterrupted, error-free, or secure operation at all times.</p>
+          <p>We may perform maintenance, address security issues, or modify or discontinue features. Where required by law, we will provide any necessary notice or remedies.</p>
+        </section>
+
+        <section class="legal-section" id="tou-12">
+          <h3><span class="section-num">12.</span> Disclaimer of Warranties</h3>
+          <p>To the maximum extent permitted by applicable law, our Services are provided on an “as is” and “as available” basis.</p>
+          <p>We do not guarantee that the Services will always be accurate, reliable, available, secure, or suitable for every purpose.</p>
+          <p>Nothing in these Terms excludes any warranty or consumer right that cannot lawfully be excluded.</p>
+        </section>
+
+        <section class="legal-section" id="tou-13">
+          <h3><span class="section-num">13.</span> Limitation of Liability</h3>
+          <p>To the maximum extent permitted by applicable law, Jawad Jabbar will not be liable for indirect, incidental, special, consequential, or punitive damages, or for loss of profits, revenue, data, goodwill, or business opportunities arising from your use of our Services.</p>
+          <p>Our total liability will be limited to the extent permitted by applicable law and any specific limitations disclosed in your applicable purchase agreement.</p>
+          <p>Nothing in these Terms limits liability that cannot legally be limited or excluded.</p>
+        </section>
+
+        <section class="legal-section" id="tou-14">
+          <h3><span class="section-num">14.</span> Indemnification</h3>
+          <p>To the extent permitted by applicable law, you agree to indemnify and hold harmless Jawad Jabbar, its affiliates, and their respective personnel from third-party claims, damages, and reasonable expenses arising directly from your unlawful use of the Services, your infringement of third-party rights, or your material violation of these Terms.</p>
+          <p>This provision does not apply to the extent a claim results from our own conduct for which liability cannot legally be excluded.</p>
+        </section>
+
+        <section class="legal-section" id="tou-15">
+          <h3><span class="section-num">15.</span> Suspension and Termination</h3>
+          <p>You may stop using our Services at any time.</p>
+          <p>We may suspend or terminate your access if we reasonably believe you have violated these Terms, created a security risk, engaged in fraud, or used the Services unlawfully.</p>
+          <p>Where appropriate and legally required, we will provide notice and an opportunity to resolve the issue.</p>
+          <p>Termination does not affect rights or obligations that accrued before termination or provisions intended to survive it.</p>
+        </section>
+
+        <section class="legal-section" id="tou-16">
+          <h3><span class="section-num">16.</span> Governing Law and Disputes</h3>
+          <p>These Terms will be governed by the laws of Pakistan, without regard to conflict-of-law principles, subject to any mandatory consumer protection laws that apply to you.</p>
+          <p>Disputes will be handled by the competent courts of Pakistan, unless applicable law requires a different forum or procedure.</p>
+        </section>
+
+        <section class="legal-section" id="tou-17">
+          <h3><span class="section-num">17.</span> Changes to These Terms</h3>
+          <p>We may update these Terms to reflect changes in our Services, business practices, or legal requirements.</p>
+          <p>We will publish the updated version on this page and revise the effective date. Where required by law, we will provide additional notice or obtain consent.</p>
+          <p>Your continued use of our Services after an update takes effect constitutes acceptance only to the extent permitted by applicable law.</p>
+        </section>
+
+        <section class="legal-section" id="tou-18">
+          <h3><span class="section-num">18.</span> Contact Us</h3>
+          <p>If you have questions about these Terms, contact us:</p>
+          <div class="contact-box">
+            <ul>
+              <li><strong>Company:</strong> Jawad Jabbar</li>
+              <li><strong>Email:</strong> <a href="mailto:jawadjabbar8261@gmail.com">jawadjabbar8261@gmail.com</a></li>
+            </ul>
+          </div>
+        </section>
+      </article>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-links">
+        <a href="https://abdulshafique.github.io/jawad-jabbar-legal/terms-of-service/">Terms of Use</a>
+        <span>•</span>
+        <a href="https://abdulshafique.github.io/jawad-jabbar-legal/privacy-policy/">Privacy Policy</a>
+        <span>•</span>
+        <a href="mailto:jawadjabbar8261@gmail.com">jawadjabbar8261@gmail.com</a>
+      </div>
+      <p>&copy; <span id="year"></span> Jawad Jabbar. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top" title="Back to top">↑</button>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const themeToggle = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
+    const themeLabel = document.getElementById('theme-label');
+    if (localStorage.getItem('jj-legal-theme') === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      themeIcon.textContent = '☀️';
+      themeLabel.textContent = 'Light';
+    }
+    themeToggle.addEventListener('click', () => {
+      const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+      if (isDark) {
+        document.documentElement.removeAttribute('data-theme');
+        localStorage.setItem('jj-legal-theme', 'light');
+        themeIcon.textContent = '🌙';
+        themeLabel.textContent = 'Dark';
+      } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('jj-legal-theme', 'dark');
+        themeIcon.textContent = '☀️';
+        themeLabel.textContent = 'Light';
+      }
+    });
+
+    const filterInput = document.getElementById('section-filter');
+    const tocItems = document.querySelectorAll('.toc-list li');
+    filterInput.addEventListener('input', (e) => {
+      const q = e.target.value.trim().toLowerCase();
+      tocItems.forEach((li) => {
+        li.style.display = li.textContent.toLowerCase().includes(q) ? '' : 'none';
+      });
+    });
+
+    const sections = document.querySelectorAll('.legal-section');
+    const tocLinks = document.querySelectorAll('.toc-list a');
+    const backToTop = document.getElementById('back-to-top');
+
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      backToTop.classList.toggle('visible', scrollY > 400);
+
+      let currentId = '';
+      sections.forEach((sec) => {
+        if (scrollY >= sec.offsetTop - 140) {
+          currentId = sec.getAttribute('id');
+        }
+      });
+      if (currentId) {
+        tocLinks.forEach((link) => {
+          link.classList.toggle('active', link.getAttribute('href') === '#' + currentId);
+        });
+      }
+    });
+
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
